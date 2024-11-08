@@ -1,0 +1,144 @@
+
+/*Done by Me*/
+html, body {
+    overflow-y: hidden;
+}
+.split-top {
+    height: 12%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 4%;
+    overflow-x: hidden;
+    left: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 20);
+}
+.split-main {
+    height: calc(88% - 20px);
+    width: calc(100% - 30px);
+    position: absolute;
+    overflow-x: hidden;
+    top: 16%;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    left: 0;
+    color: white;
+    background-color:rgb(0, 0, 0);
+}
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+.center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     height: 500px;
+     width: 550px;
+     padding-top: 20px;
+        }
+
+
+/*Done by Dr. Reyes*/
+ul, ol {
+    margin: 20px 0;
+    padding-left: 120px;
+}
+
+    ul li, ol li {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+        position: relative;
+        padding-left: 20px;
+
+    }
+
+        ul li::before {
+            content: '✔'; /* Checkmark icon */
+            position: absolute;
+            left: 0;
+            color: #ffcc00;
+        }
+ul {
+    
+    list-style-type: none; /* Hides the bullets */
+}
+
+
+.button {
+    display: inline-block; /* Makes the link behave like a block element */
+    padding: 15px 20px; /* Adds padding */
+    font-size: 16px; /* Sets the font size */
+    color: white; /* Text color */
+    text-align: center; /* Centers the text */
+    border: none; /* Removes the border */
+    /*border-radius: 5px;*/ /* Rounds the corners */
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: background-color 0.3s; /* Adds a transition effect */
+    background-color: #d59b1f; /* Bright egg yolk color */
+    margin-left: 50px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+    .button:hover {
+        background-color: #C9900F; /* Darker shade on hover */
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #ffcc00;
+    }
+
+
+/* Menu */
+
+nav {
+    background-color: #312923; /* Menu background color */
+    left: 0;
+    padding: 10px 0; /* Padding for the menu */
+    position: fixed; /* Fixes the menu at the top */
+    overflow-y: hidden;
+    width: 100%; /* Full width */
+    top: 0; /* Aligns to the top */
+    z-index: 1000; /* Keeps the menu above other content */
+}
+
+.menu {
+    list-style-type: none; /* Removes bullets */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Centers the items */
+    overflow-y: hidden;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+    .menu li {
+        margin: 0 15px; /* Spacing between items */
+    }
+
+    .menu a {
+        color: white; /* Link color */
+        text-decoration: none; /* Removes underline */
+        padding: 10px 15px; /* Padding for links */
+        border-radius: 5px; /* Rounds corners */
+        transition: background-color 0.3s, transform 0.3s; /* Transition effect */
+        text-transform: uppercase;
+    }
+
+        .menu a:hover {
+            background-color: #F9B317; /* Darker shade on hover */
+            transform: scale(1.05); /* Slightly enlarges the button */
+        }
+
+    .menu li::before {
+            content: ''; /* Checkmark icon */
+    }
+
